@@ -27,24 +27,18 @@ const mainContainer = document.getElementById('main-container');
 
     // Example: Adding list items to the list container
     const listItem1 = document.createElement('li');
-    listItem1.textContent = 'Range Rover';
+    listItem1.textContent = '';
 
     listContainer.appendChild(listItem1);
     }
 
-    // const allButtons = document.querySelectorAll('[class^="btn-"]');
-
-    // // Loop through each button and log information
-    // allButtons.forEach((button, index) => {
-    //     console.log(`Button ${index + 1} New Item:`, button.textContent);
-    //     console.log(`Button ${index + 1} Class:`, button.className);
-    // });
+     
 
 
     function handleButtonClick(event) {
         const buttonClass = event.target.className;
 
-        if (buttonClass === 'btn-1') {
+        if (buttonClass ==='btn-1') {
             // Add a new li item to list-container with text "New Item"
             const newItem = document.createElement('li');
             newItem.textContent = 'New Item';
